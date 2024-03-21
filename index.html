@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Portfolio Design Template</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main>
+
+    <header>
+      <nav class="nav container">
+        <h2 class="nav_logo"><a href="#">Portfolio</a></h2>
+
+        <ul class="menu_items">
+          <img src="times.svg" alt="timesicon" id="menu_toggle" />
+          <li><a href="#" class="nav_link">Home</a></li>
+          <li><a href="#" class="nav_link">About</a></li>
+          <li><a href="#" class="nav_link">Skills</a></li>
+          <li><a href="#" class="nav_link">Projects</a></li>
+        </ul>
+        <img src="bars.svg" alt="timesicon" id="menu_toggle" />
+      </nav>
+    </header>
+
+
+
+    <section class="hero">
+      <div class="row container">
+        <div class="column">
+          <h2 style="font-family: 'Ubuntu', sans-serif;">Hello my name is Sahil <br />I'm Full-Stack Developer</h2>
+          <p style="font-family: 'Ubuntu', sans-serif;">I'm a dedicated Full-Stack developer passionate about creating
+            captivating online experiences. With expertise in HTML, CSS, JavaScript, and PHP, I specialize in crafting
+            user-friendly websites tailored to your needs.
+            I prioritize open communication and collaboration, working closely with clients to ensure their vision comes
+            to life. Let's work together to build something extraordinary!</p>
+          <div class="buttons">
+            <button class="btn" href="link_to_your_resume">Resume</button>
+            <button class="btn" href="mailto:youremail@example.com">Contact</button>
+          </div>
+        </div>
+        <div class="column">
+          <img src="hero.png" alt="heroImg" class="hero_img" />
+        </div>
+      </div>
+      <img src="bg-bottom-hero.png" alt="" class="curveImg" />
+    </section>
+
+  </main>
+
+  <script>
+    const header = document.querySelector("header");
+    const menuToggler = document.querySelectorAll("#menu_toggle");
+
+    menuToggler.forEach(toggler => {
+      toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+    });
+  </script>
+</body>
+
+</html>
